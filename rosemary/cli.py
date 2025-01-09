@@ -19,6 +19,7 @@ from rosemary.commands.info import info, info2
 from rosemary.commands.make_module import make_module
 from rosemary.commands.env import env
 from rosemary.commands.test import test
+from rosemary.commands.zip import create_zip
 
 
 class RosemaryCLI(click.Group):
@@ -58,7 +59,7 @@ cli.add_command(locust)
 cli.add_command(stop)
 cli.add_command(selenium)
 cli.add_command(module_list)
-
+cli.add_command(create_zip)
 
 if __name__ == '__main__':
     cli()
